@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  background: #000;
+  color: #FFF;
+  padding: 20px;
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+}
+
+#btn-open,
+#btn-close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  color: #FFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 600;
+  font-size: 30px;
+}
+
+#btn-close {
+  z-index: 700;
+}
+
+#menu {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 800;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+#menu li {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#menu a {
+  color: #FFF;
+  text-decoration: none;
+  transition: color .5s;
+}
+
+#menu a:hover {
+  color: #666;
+}
+
+.main-menu {
+  background: #333;
+}
+
+.main-menu ul {
+  display: flex;
+  justify-content: right;
+}
+
+.main-menu ul li a {
+  color: #FFF;
+  display: block;
+  padding: 10px 20px;
+}
+
+.main-menu ul li a:hover {
+  background: #222;
+}
+
+#map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#map {
+  width: 1150px;
+  height: 600px;
+  z-index: 400;
+}
+
+.leaflet-top .leaflet-control {
+  margin-top: 100px;
+  z-index: 0;
+}
+
+footer {
+  background: #333;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+
+  #wrap {
+    width: 100%;
+  }
+
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+
+  .main-menu ul {
+    display: block;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+  }
+
+}

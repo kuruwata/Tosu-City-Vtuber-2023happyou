@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Torisumi Sumika</title>
+
+  <!-- 以下のスクリプトとリンクを追加 -->
+  <link rel="stylesheet" href="about.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="about.js" defer></script>
+
+  <!-- slick CSSの読み込み -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <header>
+      <h1>鳥巣すみか Torisumi Sumika</h1>
+
+      <div id="btn-open">≡</div>
+      <div id="menu">
+        <div id="btn-close">×</div>
+        <ul>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="about.html">About</a></li>
+          <li class="item"><a href="tosucity guide map.html">Tosu City Guide Map </a></li>
+          <li class="item"><a href="youtube.html">Youtube</a></li>
+          <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- slickのスライダー -->
+      <div class="slider">
+        <div><img src="images/01.png" alt="立ち絵"></div>
+        <div><img src="images/02.png" alt="立ち絵"></div>
+        <!-- 他のスライドも同様に追加 -->
+      </div>
+
+      <section>
+        <article>
+
+          <div class="container">
+            <div class="text">
+              <h2>名前</h2>
+              <p>佐賀県鳥栖市生まれのご当地Vtuber。<br>
+                地元鳥栖市を盛り上げるため、YouTubeチャンネルで観光地やグルメの紹介動画をアップする予定<br>
+                元気で活発な性格で、体を動かすことが好き。サッカーやバレーボールが得意。<br>
+                ココに文字ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+                ココに文字ココに文字ココに文字。<br>
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>Torisumi Sumika</p>
+    </footer>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick();
+    });
+  </script>
+
+</body>
+
+</html>
